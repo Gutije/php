@@ -15,7 +15,7 @@ $b = 5
 
 <table>
   <tr>
-    <th>Operación testicular</th>
+    <th>Operación</th>
     <th>Resultado</th>
     <th>Tipo</th>
   </tr>
