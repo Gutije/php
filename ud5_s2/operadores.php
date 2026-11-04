@@ -57,18 +57,55 @@ $b = 5
 </table>
 
 
+
+<?php echo $a == "17" ?>
+<br>
+<?php var_dump($a == "17") ?>
+<br>
+<?php echo $a==="17" ?>
+<br>
+<?php var_dump($a==="17") ?>
+<br>
+<?php echo $a <=> $b ?>
+<br>
+<?php var_dump($a <=> $b) ?>
+<br>
+<?php echo $b <=> $a ?>
+<br>
+<?php var_dump($b <=> $a) ?>
+
+<?php $b=0 ?>
+
+<?php echo $a == "17" ?>
+<br>
+<?php var_dump($a == "17") ?>
+<br>
+<?php echo $a==="17" ?>
+<br>
+<?php var_dump($a==="17") ?>
+<br>
+<?php echo $a <=> $b ?>
+<br>
+<?php var_dump($a <=> $b) ?>
+<br>
+<?php echo $b <=> $a ?>
+<br>
+<?php var_dump($b <=> $a) ?>
+
+<!--
+Operaciones que fallan al valer $b = 0 y sus errores:
+- División (/): $a / $b lanza un error ya que no se puede dividir entre 0
+- Módulo (%): $a % $b lanza el mismo error que con / ya que hace una division.
+- Función intdiv(): intdiv($a, $b) lanza el mismo error.
+-->
+
 <?php
-echo '$a == "17" <br>';
-var_dump($a == "17");
-"<br>";
-echo '$a==="17"<br>';
-var_dump($a==="17");
-echo '$a <=> $b <br>';
-var_dump($a <=> $b);
-echo '$b <=> $a <br>';
-var_dump($b <=> $a);
+$a += 3;
+$a *= 10;
+$a /= 2;
+
+echo "$a"
+
 ?>
-
-
 </body>
 </html>
