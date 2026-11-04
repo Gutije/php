@@ -31,8 +31,9 @@ else {
 
   echo "El resultado es $resultado";
 }
-echo "<br>"
-echo "$a $op $b = $resultado\n";
+echo "<br>";
+echo "$a $op $b = $resultado";
+echo  "<br>";
 var_dump($resultado);
 ?>
 
