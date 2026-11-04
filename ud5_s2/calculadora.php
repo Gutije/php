@@ -25,14 +25,21 @@ else {
     "/" => $a/$b,
     "%" => $a%$b,
     "**" => $a**$b,
-    "div" => intdiv($a, $b)
+    "div" => intdiv($a, $b),
+    default => "Error: operación no válida"
   };
 
   echo "El resultado es $resultado";
 }
-
-
+echo "<br>"
+echo "$a $op $b = $resultado\n";
+var_dump($resultado);
 ?>
+
+
+<!--
+6. PHP Lanza una señal de error porque ese $op no esta definido en el match
+-->
 
 </body>
 </html>
